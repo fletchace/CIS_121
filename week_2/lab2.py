@@ -40,7 +40,7 @@ print(f"The sphere volume is {sphere_volume}.")
 #Question 7
 cone_radius = int(input("Give me the radius: "))
 cone_height = int(input("Give me the height: "))
-cone_volume = math.pi*(((cone_radius ** 2) * cone_height) / 3)
+cone_volume = math.pi * (((cone_radius ** 2) * cone_height) / 3)
 print(f"The cone volume is {cone_volume}.")
 
 #Question 8
