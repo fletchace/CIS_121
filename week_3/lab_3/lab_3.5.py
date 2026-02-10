@@ -7,5 +7,3 @@ elif second_number < first_number and second_number < third_number:
     print(f"The smallest number is {second_number}.")
 elif third_number < second_number and third_number < first_number:
     print(f"The smallest number is {third_number}.")
-else:
-    pass
