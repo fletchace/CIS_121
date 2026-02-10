@@ -1,4 +1,3 @@
-"""
 def greeting(name):
     print(f"Hello {name}. How are you?")
 
@@ -34,7 +33,6 @@ def x_in_word(word):
     if count >= 1 and flag >= 1:
         return True
     return False
-"""
 
 for num1 in range(1,5):
     for num2 in range(1,7):
