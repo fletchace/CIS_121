@@ -13,5 +13,5 @@ def flip_flop(word):
         second_half = word[half_int+1:]
         print(f"{second_half}{middle_letter}{first_half}")
 
-flip_flop("retard")
-flip_flop("asshole")
+flip_flop("python")
+flip_flop("programming")
