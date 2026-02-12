@@ -1,5 +1,5 @@
 
-
+'''
 def decode_rle(string):
     final = ''
     pattern = ''
@@ -24,5 +24,40 @@ def decode_rle(string):
             how_many_number = 0
             count += 1
     print(final)
+'''
 
-decode_rle("a3b1c12")
+def decode_rle(string):
+    count = 0
+    result = ''
+    while len(string) > count:
+        letter = string[count]
+        count += 1
+        how_many = ''
+        while count < len(string) and string[count].isdigit():
+            how_many += string[count]
+            count += 1
+        result += letter * int(how_many)
+    return result
+
+
+
+print(decode_rle("a3b1c12"))
+
+'''
+def expand_string(s):
+    result = ""
+    i = 0
+    
+    while i < len(s):
+        letter = s[i]
+        i += 1
+        
+        number_str = ""
+        while i < len(s) and s[i].isdigit():
+            number_str += s[i]
+            i += 1
+        
+        result += letter * int(number_str)
+    
+    return result
+'''
