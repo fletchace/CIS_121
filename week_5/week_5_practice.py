@@ -59,22 +59,20 @@ for letter in sentence:
     if letter == ' ':
         count = 0
         print()
-'''
+
 sentence = "I gotta get out of here and go eat some food at the cafeteria and after that I am going to go to the CSU and do some homework for my calculus class."
+word_lyst = []
+new_word = ''
 for letter in sentence:
-    word_lyst = []
-    new_word = ''
-    count = 1
-    if count != 0:
-        new_word = new_word + letter
-        count += 1
+    if letter != ' ':
+        new_word += letter
     if letter == ' ':
-        count = 0
         word_lyst.append(new_word)
         new_word = ''
-    for element in word_lyst:
-        print(element)
-'''
+word_lyst.append(new_word)
+for element in word_lyst:
+    print(element)
+
 def sentence_to_words(sent):
     word_lyst = []
     found_word = ''
@@ -90,3 +88,8 @@ words = sentence_to_words (sample_sentence)
 for word in words:
     print(words)
 '''
+sentence = "I gotta get out of here and go eat some food at the cafeteria and after that I am going to go to the CSU and do some homework for my calculus class."
+words = sentence.split()
+
+for word in words:
+    print(word)
