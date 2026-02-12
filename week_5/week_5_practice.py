@@ -1,3 +1,4 @@
+'''
 def greeting(name):
     print(f"Hello {name}. How are you?")
 
@@ -37,3 +38,55 @@ def x_in_word(word):
 for num1 in range(1,5):
     for num2 in range(1,7):
         print(f'{num1*num2 :3.0f}', end = "")
+
+lisp = ['a', 'apple', 7, 12.1, True, 456]
+
+print(lisp[1:4+1])
+
+for thang in lisp[1:4+1]:
+    print(thang)
+
+for numer in range(len(lisp)):
+    print(numer)
+'''
+'''
+sentence = "I gotta get out of here and go eat some food at the cafeteria and after that I am going to go to the CSU and do some homework for my calculus class."
+for letter in sentence:
+    word_lyst = []
+    count = 1
+    if count != 0:
+        print(letter, end = '')
+    if letter == ' ':
+        count = 0
+        print()
+'''
+sentence = "I gotta get out of here and go eat some food at the cafeteria and after that I am going to go to the CSU and do some homework for my calculus class."
+for letter in sentence:
+    word_lyst = []
+    new_word = ''
+    count = 1
+    if count != 0:
+        new_word = new_word + letter
+        count += 1
+    if letter == ' ':
+        count = 0
+        word_lyst.append(new_word)
+        new_word = ''
+    for element in word_lyst:
+        print(element)
+'''
+def sentence_to_words(sent):
+    word_lyst = []
+    found_word = ''
+    for letter in sent:
+        if letter == " ":
+            word_lyst.append(found_word)
+        else:
+            fount_word += letter
+    return word_lyst
+
+sample_sentence = "I gotta get out of here and go eat some food at the cafeteria and after that I am going to go to the CSU and do some homework for my calculus class."
+words = sentence_to_words (sample_sentence)
+for word in words:
+    print(words)
+'''
