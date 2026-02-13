@@ -5,7 +5,7 @@ def is_isogram(word):
              if letters == letter:
                   letter_count += 1
     if letter_count > len(word):
-            print("Not Isogram")
+        print("Not Isogram")
     else:
         print("Is Isogram")
 
