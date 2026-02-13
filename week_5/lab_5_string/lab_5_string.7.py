@@ -3,6 +3,7 @@ def first_letters(sentence):
     for letter in sentence:
         if count == 0:
             print(letter, end = '')
+            
         if letter == ' ':
             count = 0
         else:
