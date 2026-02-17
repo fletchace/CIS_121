@@ -8,8 +8,7 @@ def last_letters(sentence):
             print(last_letter, end = '')
         count += 1
         last_letter = letter
-    print(sentence[-1], end = '')
-    print()
+    print(sentence[-1])
 
 last_letters("wingardium leviosa makes objects float")
 last_letters("expecto patronum repels dementors")
