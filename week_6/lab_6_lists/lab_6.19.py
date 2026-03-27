@@ -10,4 +10,4 @@ def is_acronym(acronym, words):
 is_acronym("abc", ["alice", "bob", "charlie"])
 is_acronym("a", ["an", "apple"])
 is_acronym("ngguoy", ["never", "gonna", "give", "up", "on", "you"])
-is_acronym("ab", ["apple", "banana", 'cat'])
+is_acronym("abd", ["apple", "banana", 'cat'])

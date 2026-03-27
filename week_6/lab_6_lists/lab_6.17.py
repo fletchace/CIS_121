@@ -15,3 +15,4 @@ def war_of_numbers(armys):
 war_of_numbers([2, 8, 7, 5])
 war_of_numbers([12, 90, 75, 1, 1])
 war_of_numbers([2, 10, 22, 243])
+war_of_numbers([5, 2, 10, 243])

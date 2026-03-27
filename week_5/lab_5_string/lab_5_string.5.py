@@ -9,15 +9,17 @@ def is_isogram(word):
     else:
         print("Is Isogram")
 
-is_isogram("algorithm")
-is_isogram("password")
-is_isogram("consecutive")
-is_isogram("python")
-
 def optimal_isogram(word):
     seen = ""
     for letter in word:
         if letter in seen:
-            print("No Isogram")
+            return("Not Isogram")
+            break
         seen += letter
-    print("Is Isogram")
+    return("Is Isogram")
+
+is_isogram("algorithm")
+is_isogram("password")
+is_isogram("consecutive")
+print(optimal_isogram("racecar"))
+

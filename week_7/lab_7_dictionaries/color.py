@@ -1,0 +1,1 @@
+sns.color_palette("magma", as_cmap=True)
